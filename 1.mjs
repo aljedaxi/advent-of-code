@@ -1,7 +1,8 @@
 import S from './util.mjs'
 const {reduce, parseInt, justs, map, pipe, clamp, range, prop} = S
 
-const input = await fs.readFile('./input.1.txt', 'utf8')
+const n = 1
+const input = await fs.readFile(`./input.${n}.txt`, 'utf8')
 const ints = justs (map (parseInt (10)) (input.split('\n')))
 
 const algo1 = pipe ([
