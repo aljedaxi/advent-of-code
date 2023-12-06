@@ -9,6 +9,11 @@ test-today:
 
 paste-today-input:
 	@pbpaste > $(date).txt
+	@tail $(date).txt
+
+paste-today-test:
+	@pbpaste > $(date)-test.txt
+	@tail $(date)-test.txt
 
 touch-today:
 	@touch $(date).clj
