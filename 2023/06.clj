@@ -26,8 +26,7 @@
 
 (defn main [[time distance]]
   (let [races (zip-2-pairs (parse-line time) (parse-line distance))
-        n-ways-to-win (map #(-> % gen-race-times count) races)]
-    (prn races)
-    (reduce * 1 n-ways-to-win)))
+        n-ways-to-win (map #(-> % gen-race-times count) [[41667266 244104712281040]])]
+    n-ways-to-win))
 
 (prn (main *input*))
