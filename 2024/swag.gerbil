@@ -1,0 +1,10 @@
+(define (whatever)
+	(define line (read-line))
+	(define (main line)
+		(print line)
+		(whatever))
+	(if (eof-object? line) ""
+		(main line)))
+		
+
+(whatever)
